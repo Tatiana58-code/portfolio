@@ -2,18 +2,16 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-solc_version = "0.8.30"  # Версия Solidity (можно изменить)
-optimizer = true          # Включить оптимизатор
-optimizer_runs = 200      # Количество прогонов оптимизатора (для баланса gas/размера)
+solc_version = "0.8.30"  
+optimizer = true          
+optimizer_runs = 200     
 
-# Настройки тестов
-[fmt]                    # Форматирование кода
-line_length = 120        # Длина строки
-tab_width = 4            # Размер табуляции
+[fmt]                   
+line_length = 120        
+tab_width = 4          
 
-[fuzz]                   # Настройки фаззинга (если используешь)
-runs = 256               # Количество прогонов
-max_test_rejects = 65536 # Максимальное количество отвергнутых входных данных
+[fuzz]                   
+runs = 256              
+max_test_rejects = 65536 
 
-# Дополнительные пути для импортов (если используешь библиотеки)
 allow_paths = ["src", "lib"]
